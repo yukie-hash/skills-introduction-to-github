@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 17:18:07 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/21 21:17:51 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/10/21 22:34:39 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
