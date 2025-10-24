@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hamada <hamada@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 02:54:20 by hamada            #+#    #+#             */
-/*   Updated: 2025/10/24 03:06:24 by hamada           ###   ########.fr       */
+/*   Updated: 2025/10/24 21:25:37 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strnrim(char *s1, char const *set)
+int	is_in_set(char s1, char *set)
 {
 
 }
