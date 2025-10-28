@@ -4,5 +4,5 @@
 
 int	main(void)
 {
-	printf ("%s", ft_strnrim ("1234AAAA22331122", "AAA"));
+	printf ("%s", ft_strtrim ("A112A24433", "1234"));
 }
