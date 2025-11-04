@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include "libft.h"
 
-char	toupper(unsigned int, char)
+char	test_toupper(unsigned int i, char c)
 {
+	(void)i;
 	if ((c >= 97) && (c <= 122))
 		return (c - 32);
 	else
@@ -12,5 +13,5 @@ char	toupper(unsigned int, char)
 
 int	main(void)
 {
-	printf ("%s", ft_mapi ("abcgefg", toupper (3, g)));
+	printf ("%s", ft_strmapi ("abcdefg", test_toupper));
 }
