@@ -4,5 +4,5 @@
 
 int	main(void)
 {
-	printf (ft_itoa (-678));
+	printf ("%s", ft_itoa (-2147483648));
 }
