@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:24:50 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/21 22:21:11 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/04 22:13:20 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	unsigned char	*dst;
 	size_t			i;
 
+	if ((nmemb == 0) || (size == 0))
+		return (NULL);
 	i = 0;
 	if (size > SIZE_MAX / nmemb)
 		return (NULL);
