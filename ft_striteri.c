@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 23:25:35 by yhamada           #+#    #+#             */
-/*   Updated: 2025/11/04 23:25:58 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/05 18:44:11 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+	{
+		f (i, &s[i]);
+		i++;
+	}
 }
