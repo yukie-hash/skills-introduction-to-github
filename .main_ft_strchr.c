@@ -17,7 +17,7 @@ int	main(void)
 	else
 		printf ("%s\n", schr1);
 
-	schr2 = strchr(str2, '\0');	
+	schr2 = ft_strchr(str2, '\0');	
 	if (!(schr2))
 		printf ("%s\n",null);
 	else

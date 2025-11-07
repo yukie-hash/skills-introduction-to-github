@@ -5,11 +5,20 @@
 
 int	main(void)
 {
-	const char	*str1 = "aaabbbccc";
-	const char	*str2 = "aaabbbccc";
-	int	c;
+	const char	*str1 = "abbbccc";
+	const char	*str2 = "abbbccc";
+	char		*schr1;
+	char		*schr2;
+	char		null[] = "NULL";
 
-	c = '\0';
-	printf ("%s\n", strrchr (str1, c));
-	printf ("%s", ft_strrchr (str2 ,c));
+	schr1 = strrchr(str1, 'a');
+	if (!(schr1))
+		printf ("%s\n", null);
+	else
+		printf ("%s\n", schr1);
+	schr2 = ft_strrchr(str2, 'a');
+	if (!(schr2))
+		printf ("%s\n", null);
+	else
+		printf ("%s\n", schr2);
 }

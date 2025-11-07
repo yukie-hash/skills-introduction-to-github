@@ -5,6 +5,13 @@
 
 int	main(void)
 {
-printf ("%d\n", strncmp ("aaaaa", "abaaba", 3));
-printf ("%d\n", ft_strncmp ("aaaaa", "abaaba", 3));
+	char	*s1;
+	char	*s2;
+	size_t	n;
+
+	s1 = "128";
+	s2 = "1";
+	n = 9;
+	printf ("%d\n", strncmp (s1, s2, n));
+	printf ("%d\n", ft_strncmp (s1, s2, n));
 }

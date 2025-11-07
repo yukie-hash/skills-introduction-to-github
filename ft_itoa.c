@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:40:42 by yhamada           #+#    #+#             */
-/*   Updated: 2025/11/04 22:52:03 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/07 20:12:43 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	fill_digit(char *str, long n, size_t i)
 {
 	str[i] = '\0';
 	i--;
-	while (n > 0)
+	while ((int)i >= 0)
 	{
 		str[i] = n % 10 + '0';
 		n /= 10;

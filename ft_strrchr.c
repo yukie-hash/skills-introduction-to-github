@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 18:34:25 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/19 19:01:26 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/07 18:13:36 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
-	while (s[i])
-		i++;
-	i += 1;
-	while (i > 0)
+	i = ft_strlen (s);
+	while ((int)i >= 0)
 	{
 		if (s[i] != c)
 			i--;
