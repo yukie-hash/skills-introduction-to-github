@@ -7,7 +7,7 @@ int	main(void)
 {
 	unsigned char	c;
 
-	c = 'k';
+	c = 33;
 	printf ("%d\n", isalpha (c));
-	printf ("%d", ft_isalpha (c));
+	printf ("%d\n", ft_isalpha (c));
 }
