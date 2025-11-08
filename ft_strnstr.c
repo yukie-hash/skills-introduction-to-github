@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 20:18:00 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/19 22:56:08 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/08 21:47:05 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!little)
+	if (len > ft_strlen (big))
+		len = ft_strlen (big);
+	if (little[i] == '\0')
 		return ((char *)big);
 	while ((i < len) && (big[i]))
 	{
@@ -29,5 +31,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)&big[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

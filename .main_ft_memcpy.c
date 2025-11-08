@@ -5,13 +5,13 @@
 
 int	main(void)
 {
-	char	dst1[] = "aaaaa";
-	char	dst2[] = "aaaaa";
-	char	src[] = "ccc";
-	size_t	n = 1;
+	char	dst1[] = "";
+	//char	dst2[] = "";
+	char	src[] = "";
+	size_t	n = 3;
 
-	memcpy(dst1 + 2, src, n);
-	ft_memcpy(dst2 + 2, src, n);
-	printf ("%s\n", dst1);
-	printf ("%s\n", dst2);
+	memcpy(dst1, src, n);
+	// ft_memcpy(dst2, src, n);
+	// printf ("%s\n", dst1);
+	// printf ("%s\n", dst2);
 }

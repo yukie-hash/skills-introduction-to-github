@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 15:26:53 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/19 15:33:17 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/08 19:09:08 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*uc_dst;
 	unsigned char	*uc_src;
 
+	if ((!dst) && (!src))
+		return (NULL);
 	uc_dst = (unsigned char *)dst;
 	uc_src = (unsigned char *)src;
 	i = 0;
