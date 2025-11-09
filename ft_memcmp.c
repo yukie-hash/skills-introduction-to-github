@@ -6,7 +6,7 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 20:01:20 by yhamada           #+#    #+#             */
-/*   Updated: 2025/10/19 20:11:26 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/09 21:53:43 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i != n)
 	{
-		if (u_s1[i] > u_s2[i])
-		{
+		if (u_s1[i] != u_s2[i])
 			return (u_s1[i] - u_s2[i]);
-		}
-		else if (u_s1[i] < u_s2[i])
-		{
-			return (u_s1[i] - u_s2[i]);
-		}
 		i++;
 	}
 	return (0);

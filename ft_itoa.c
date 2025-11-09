@@ -6,17 +6,17 @@
 /*   By: yhamada <yhamada@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:40:42 by yhamada           #+#    #+#             */
-/*   Updated: 2025/11/07 20:12:43 by yhamada          ###   ########.fr       */
+/*   Updated: 2025/11/09 21:52:56 by yhamada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	fill_digit(char *str, long n, size_t i)
+void	fill_digit(char *str, long n, int i)
 {
 	str[i] = '\0';
 	i--;
-	while ((int)i >= 0)
+	while (i >= 0)
 	{
 		str[i] = n % 10 + '0';
 		n /= 10;
